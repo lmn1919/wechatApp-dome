@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+      <view class="grid-item" bindtap="toDetail" data-page="list-scroll-view/list-scroll-view">
+            <text class="iconfont icon-Shape"></text>
+            无限加载列表
+      </view>
+      <view class="grid-item" bindtap="toDetail" wx:for="{{8}}" data-page="list-scroll-view/list-scroll-view">
+            <text class="iconfont icon-weizhiwenjian"></text>
+            还没想好干啥
+      </view>
+</view>

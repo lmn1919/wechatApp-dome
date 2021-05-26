@@ -1,0 +1,22 @@
+
+<view class="content">
+    <view style="height:{{aboveShowIndex*itemHeight}}rpx"> </view>
+    <view wx:for="{{listData}}" class="first-item"  wx:for-index="i" wx:for-item="firstItem" wx:key="i" wx:if="{{firstItem.isDisplay}}">
+        <view class="item-list" wx:for="{{firstItem.itemList}}" wx:key="index">
+           <view>{{item.qus}}</view>
+           <view class="answer-list">
+                <view>A. {{item.answerA}}</view>
+                <view>B. {{item.answerB}}</view>
+                <view>C. {{item.answerC}}</view>
+                <view>D. {{item.answerD}}</view>
+           </view>
+           <view class="item-index">
+              {{firstItem.itemIndex}}--{{index}}
+           </view>
+        </view>
+       
+    </view>
+    <view style="height:{{belowShowNum*itemHeight}}rpx"> </view>
+</view>
+
+
